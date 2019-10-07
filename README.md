@@ -53,21 +53,3 @@ The database functionality subsystem classes obtain database connections through
 “ConnectionSingleton”. The operation of this use case application requires a database connection, so I have taken an eager 
 initialization approach. A ConnectionSingelton object is created at the time of class loading, and access to the database connection 
 through this object is accessible to all classes.
-and the following command will generate a report in HTML format that you can open it using a Web browser. 
-
-```bash
-mvn checkstyle:checkstyle
-```
-
-```bash
-target/site/checkstyle.html
-```
-
-
-# Generate  coveralls:report 
-
-```bash
-mvn -DrepoToken=YOUR-REPO-TOCKEN-ON-COVERALLS  cobertura:cobertura coveralls:report
-```
-
-
