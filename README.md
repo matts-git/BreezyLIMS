@@ -12,7 +12,7 @@ This application requires an Apache Derby database.
     project VARCHAR(40) NOT NULL, experiment VARCHAR(40) NOT NULL, sample VARCHAR(40) NOT NULL, result VARCHAR(40) NOT NULL, 
     CONSTRAINT primary_key PRIMARY KEY (index));
 
-# Task 1: Design pattern and its Use Case Scenario Description.
+# Abstract Document Design Pattern Description
 
 I have selected the Abstract Document design pattern to apply to the use case of a toy laboratory information management system (LIMS). 
 A LIMS is simply a system for managing experimental data. The toy LIMS I have submitted enables a user to enter data associated with 
@@ -53,128 +53,6 @@ The database functionality subsystem classes obtain database connections through
 “ConnectionSingleton”. The operation of this use case application requires a database connection, so I have taken an eager 
 initialization approach. A ConnectionSingelton object is created at the time of class loading, and access to the database connection 
 through this object is accessible to all classes.
-
-I have implemented this application with the intention of providing sufficiency, understandability, modularity, cohesion, coupling, 
-flexibility, reusability, and information hiding, efficiency, and reliability. 
-
--	Sufficiency is covered by utilizing the advantages of the selected design patterns. An example of this is utilizing the streaming of 
-‘document’ property tree structures to write into and read from the database.
--	Understandability is covered through using appropriate design patterns, applying helpful refactoring techniques, and including 
-extensive comments and references in the code for more complex methods. 
--	Modularity and Cohesion are covered by applying appropriate design patterns and dividing the program into well defined classes which 
-encapsulate relevant fields and methods. I have also organized these classes into well-defined packages.
--	Coupling has been covered by applying appropriate design patterns. Although there are many associations between classes and 
-interfaces in the Abstract Document domain, there are relatively few between the actual classes. The Facade pattern allows for 
-subsystems to interact without actually coupling together directly as well.
--	Flexibility and Reusability are provided through the use of the Abstract Document design pattern, which facilitates future addition 
-of ‘document’ properties.
--	Information hiding is covered through use of the Facade pattern, which isolates client code from the complexity of the included 
-subsystems.
--	Efficiency is covered by utilizing streaming to traverse ‘document’ property tree strucutres and using these streams to send data 
-to and from the database. Also, the use efficient algorithms has been applied (no algorithms are slower than O(n))
--	Reliability was covered by designing thorough tests and from diligent debugging.
-
-
-# How to compile the project
-
-We use Apache Maven to compile and run this project. 
-
-You need to install Apache Maven (https://maven.apache.org/)  on your system. 
-
-Type on the command line: 
-
-```bash
-mvn clean compile
-```
-
-# How to create a binary runnable package 
-
-
-```bash
-mvn clean compile assembly:single
-```
-
-
-# How to run
-
-```bash
-mvn -q clean compile exec:java -Dexec.executable="edu.bu.met.cs665.Main" -Dlog4j.configuration="file:log4j.properties"
-```
-
-We recommand the above command for running the project. 
-
-Alternativly, you can run the following command. It will generate a single jar file with all of the dependencies. 
-
-```bash
-mvn clean compile assembly:single
-
-java -Dlog4j.configuration=file:log4j.properties -classpath ./target/JavaProjectTemplate-1.0-SNAPSHOT-jar-with-dependencies.jar  edu.bu.met.cs665.Main
-```
-
-
-# Run all the unit test classes.
-
-
-```bash
-mvn clean compile test
-
-```
-
-# Using Findbugs 
-
-To see bug detail using the Findbugs GUI, use the following command "mvn findbugs:gui"
-
-Or you can create a XML report by using  
-
-
-```bash
-mvn findbugs:gui 
-```
-
-or 
-
-
-```bash
-mvn findbugs:findbugs
-```
-
-
-For more info about FindBugs see 
-
-http://findbugs.sourceforge.net/
-
-And about Maven Findbug plugin see 
-https://gleclaire.github.io/findbugs-maven-plugin/index.html
-
-
-You can install Findbugs Eclipse Plugin 
-
-http://findbugs.sourceforge.net/manual/eclipse.html
-
-
-
-SpotBugs https://spotbugs.github.io/ is the spiritual successor of FindBugs.
-
-
-# Run Checkstyle 
-
-CheckStyle code styling configuration files are in config/ directory. Maven checkstyle plugin is set to use google code style. 
-You can change it to other styles like sun checkstyle. 
-
-To analyze this example using CheckStyle run 
-
-```bash
-mvn checkstyle:check
-```
-
-This will generate a report in XML format
-
-
-```bash
-target/checkstyle-checker.xml
-target/checkstyle-result.xml
-```
-
 and the following command will generate a report in HTML format that you can open it using a Web browser. 
 
 ```bash
