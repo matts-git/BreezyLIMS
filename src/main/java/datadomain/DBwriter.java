@@ -1,6 +1,6 @@
-package edu.bu.met.cs665.datadomain;
+package datadomain;
 
-import edu.bu.met.cs665.documentdomain.Experiment;
+import documentdomain.Experiment;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;

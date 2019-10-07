@@ -1,9 +1,7 @@
-package edu.bu.met.cs665;
-
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
 
-import edu.bu.met.cs665.documentdomain.AbstractDocument;
+import documentdomain.AbstractDocument;
 
 import java.util.Arrays;
 

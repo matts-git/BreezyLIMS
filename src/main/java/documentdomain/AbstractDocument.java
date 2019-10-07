@@ -1,4 +1,4 @@
-package edu.bu.met.cs665.documentdomain;
+package documentdomain;
 
 import java.util.List;
 import java.util.Map;

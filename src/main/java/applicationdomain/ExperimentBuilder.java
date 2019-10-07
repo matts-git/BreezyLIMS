@@ -1,7 +1,7 @@
-package edu.bu.met.cs665;
+package applicationdomain;
 
-import edu.bu.met.cs665.documentdomain.Experiment;
-import edu.bu.met.cs665.documentdomain.enums.Property;
+import documentdomain.Experiment;
+import documentdomain.enums.Property;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;

@@ -1,4 +1,4 @@
-package edu.bu.met.cs665.documentdomain.enums;
+package documentdomain.enums;
 
 /**
  * Enums To describe property types representing Document traits.

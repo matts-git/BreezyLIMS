@@ -1,9 +1,7 @@
-package edu.bu.met.cs665;
-
-import edu.bu.met.cs665.datadomain.DBreader;
-import edu.bu.met.cs665.datadomain.DBwriter;
-import edu.bu.met.cs665.documentdomain.Experiment;
-import edu.bu.met.cs665.documentdomain.enums.Property;
+import datadomain.DBreader;
+import datadomain.DBwriter;
+import documentdomain.Experiment;
+import documentdomain.enums.Property;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;

@@ -1,7 +1,7 @@
-package edu.bu.met.cs665.datadomain;
+package datadomain;
 
-import edu.bu.met.cs665.ClosingException;
-import edu.bu.met.cs665.documentdomain.Experiment;
+import applicationdomain.ClosingException;
+import documentdomain.Experiment;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -9,7 +9,6 @@ import java.sql.ResultSetMetaData;
 import java.sql.SQLException;
 
 import org.apache.log4j.Logger;
-
 
 /**
  * Class providing methods for querying database.

@@ -1,4 +1,4 @@
-package edu.bu.met.cs665.datadomain;
+package datadomain;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

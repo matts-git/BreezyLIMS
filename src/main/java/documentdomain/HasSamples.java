@@ -1,6 +1,6 @@
-package edu.bu.met.cs665.documentdomain;
+package documentdomain;
 
-import edu.bu.met.cs665.documentdomain.enums.Property;
+import documentdomain.enums.Property;
 
 import java.util.stream.Stream;
 

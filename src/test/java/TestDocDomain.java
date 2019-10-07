@@ -1,11 +1,9 @@
-package edu.bu.met.cs665;
-
 import static org.junit.Assert.assertEquals;
 
-import edu.bu.met.cs665.documentdomain.Experiment;
+import documentdomain.Experiment;
 
-import edu.bu.met.cs665.documentdomain.Sample;
-import edu.bu.met.cs665.documentdomain.enums.Property;
+import documentdomain.Sample;
+import documentdomain.enums.Property;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;

@@ -1,4 +1,4 @@
-package edu.bu.met.cs665;
+package applicationdomain;
 
 /**
  * This custom exception is used to exit the program. Necessitated by Maven Surefire
@@ -7,6 +7,7 @@ package edu.bu.met.cs665;
  * @author Matthew Schuckmann
  *
  */
+
 public class ClosingException extends Exception { 
   
   /**
