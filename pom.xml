@@ -3,7 +3,7 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>edu.bu.cs665</groupId>
+	<groupId>BreezyLIMS</groupId>
 	<artifactId>JavaProjectTemplate</artifactId>
 	<version>1.0-SNAPSHOT</version>
 	<packaging>jar</packaging>
@@ -14,11 +14,10 @@
 	<properties>
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>
-		
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<checkstyle.version>[8.18,)</checkstyle.version>
+		<checkstyle.version>[8.25,)</checkstyle.version>
 		<checkstyle.plugin.version>3.1.0</checkstyle.plugin.version>
-		<sevntu.checkstyle.plugin.version>1.29.0</sevntu.checkstyle.plugin.version>
+		<sevntu.checkstyle.plugin.version>1.35.0</sevntu.checkstyle.plugin.version>	
 	</properties>
 
 	<reporting>
@@ -26,12 +25,10 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-jxr-plugin</artifactId>
-				<version>3.6</version>
+				<version>2.5</version>
 			</plugin>
 		</plugins>
 	</reporting>
-
-
 	<build>
 
 		<plugins>
@@ -93,12 +90,7 @@
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-checkstyle-plugin</artifactId>
 				<version>${checkstyle.plugin.version}</version>
-				<dependencies>
-					<dependency>
-						<groupId>com.puppycrawl.tools</groupId>
-						<artifactId>checkstyle</artifactId>
-						<version>${checkstyle.version}</version>
-					</dependency>
+				<dependencies>				
 					<dependency>
 						<groupId>com.github.sevntu-checkstyle</groupId>
 						<artifactId>sevntu-checkstyle-maven-plugin</artifactId>
@@ -130,7 +122,6 @@
 					<threshold>Low</threshold>
 					<!-- Produces XML report -->
 					<xmlOutput>true</xmlOutput>
-
 					<!-- Configures the directory in which the XML report is created -->
 					<findbugsXmlOutputDirectory>${project.build.directory}/findbugs</findbugsXmlOutputDirectory>
 				</configuration>
@@ -143,9 +134,7 @@
 					</execution>
 				</executions>
 			</plugin>
-
 		</plugins>
-
 	</build>
 
 	<dependencies>
@@ -168,8 +157,6 @@
 			<version>1.2.17</version>
 		</dependency>
 		
-		<!-- Added by Matthew 2019-7-30 -->	
-		<!-- https://mvnrepository.com/artifact/org.apache.derby/derby -->
 		<dependency>
 		    <groupId>org.apache.derby</groupId>
 		    <artifactId>derby</artifactId>
