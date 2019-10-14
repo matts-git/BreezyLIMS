@@ -13,9 +13,9 @@ import java.util.Scanner;
 import org.apache.log4j.Logger;
 
 /**
- * Main Class for LIMS toy application Abstract Document use case.
- * User input methods are included, but CS665 submission on 2019-8-20 excludes use of these.
- * The 2019-8-20 submission main method is a simple demonstration method.
+ * Main Class for LIMS application.
+ * User input methods are included, this present iteration excludes use of these.
+ * The current main method is a simple demonstration method.
  * Application User Input Classes = userMenu, dataEntryApp, dataRetreivalApp. 
  * The Abstract Document pattern enables flexible handling of additional, non-static
  * properties. This pattern uses the concept of traits (or properties) to enable type 
