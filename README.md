@@ -1,6 +1,6 @@
-# Project Template
+# BreezyLIMS
 
-This is a Java Maven Project Template
+A laboratory information management system (LIMS) written in Java and designed by combining the Abstract Document, Facade, and Singleton design patterns. A LIMS is simply a system for managing experimental data. BreezyLIMS enables a user to enter data associated with an experimental result into an Apache Derby database.
 
 # Apache Derby Database Information
 
@@ -12,12 +12,11 @@ This application requires an Apache Derby database.
     project VARCHAR(40) NOT NULL, experiment VARCHAR(40) NOT NULL, sample VARCHAR(40) NOT NULL, result VARCHAR(40) NOT NULL, 
     CONSTRAINT primary_key PRIMARY KEY (index));
 
-# Abstract Document Design Pattern Description
+# Project Template
 
-I have selected the Abstract Document design pattern to apply to the use case of a toy laboratory information management system (LIMS). 
-A LIMS is simply a system for managing experimental data. The toy LIMS I have submitted enables a user to enter data associated with 
-an experimental result into an Apache Derby database, as well as retreive such data from the database. In order to fully implement 
-this toy LIMS application, I have combined the use of the Abstract Document pattern with the Facade and Singleton design patterns.
+This is a Java Maven Project Template
+
+# Abstract Document Design Pattern Description
 
 The Abstract Document design pattern is structural design pattern. This pattern is not simply restricted to use in generating documents.
 The term ‘document’ in the name refers to document-oriented databases, and this pattern lends itself well to streaming data between an application and a database. The pattern uses the concept of traits while separating different properties of a class into interfaces. The Abstract Document pattern allows for organizing objects in loosely typed key-value stores (here, in Map objects) and exposing the data using typed views. The purpose of the Abstract Document pattern is to achieve flexibility between components in a strongly typed language where new properties can be added to the object-tree on the fly while maintaining support of type-safety. 
